@@ -7,14 +7,8 @@ A system that uploads data everyday at 8pm KST to the S3 bucket. Implemented air
 - [Main](#Main)
 - [Structure](#Structure)
 - [Airflow](#Airflow)
-- [Overspeed](#Overspeed)
-- [Rapid_Behavior](#Rapid_Behavior)
-- [Statistics](#Statistics)
-- [Error](#Error)
-- [GetFiles](#GetFiles)
-- [generate_data](#generate_data)
-- [Workers](#Workers)
-- [clean_data](#clean_data)
+- [Logs](#log)
+- [Utils](#Utils)
 
 
 
@@ -23,7 +17,7 @@ A system that uploads data everyday at 8pm KST to the S3 bucket. Implemented air
 run python3 main.py to run all script and send result to the S3 bucket. 
 </details>
 
-## Backup Script
+## Structure
 <details><summary>Folder structure</summary>
 
 ```
@@ -83,7 +77,7 @@ This Apache Airflow DAG, named "s3_upload," is designed for scheduling a task re
 
 </details> 
         
-## logs
+## Logs
 <details>
 <summary>logging folder</summary>
 File: log.py, log_config.py.py
